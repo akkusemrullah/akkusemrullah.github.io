@@ -1,1 +1,0 @@
-TravelPlanner.apk dosyasını bu klasöre koyun (bkz. ../README.md).
