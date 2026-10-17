@@ -104,6 +104,7 @@
 <tbody>
 <tr><td><strong>Supabase Inc.</strong> (ABD merkezli; kullanılan sunucu bölgesi: Frankfurt, Almanya; altyapı Amazon Web Services)</td><td>Hesap ve kimlik doğrulama, veritabanı, dosya depolama, eşitleme</td><td>Hesap bilgileri ve hesabınla eşitlenen tüm seyahat içerikleri, belgeler, IP adresi ve teknik kayıtlar</td><td>Yalnızca hesaplı kullanımda</td></tr>
 <tr><td><strong>Google</strong> (Google LLC / Google Ireland Ltd.)</td><td>“Google ile giriş yap”</td><td>Giriş işlemi Google’ın sayfasında gerçekleşir; Google bize ad, e-posta ve profil fotoğrafı bağlantını iletir</td><td>Yalnızca Google ile girişi seçersen</td></tr>
+<tr><td><strong>Cloudflare Turnstile</strong> (Cloudflare, Inc.)</td><td>Bot koruması (CAPTCHA): hesap açma, e-postayla giriş ve şifre sıfırlamada isteğin bir insandan geldiğini doğrulamak</td><td>IP adresi, tarayıcı/cihaz özellikleri ve doğrulama sinyalleri; adın, e-postan ve seyahat verilerin gönderilmez</td><td>Kayıt, e-postayla giriş ve şifre sıfırlama sırasında</td></tr>
 <tr><td><strong>E-posta gönderim hizmeti sağlayıcısı</strong></td><td>Doğrulama ve şifre sıfırlama kodlarını iletmek</td><td>E-posta adresin ve iletinin içeriği</td><td>Kayıt ve şifre sıfırlama sırasında</td></tr>
 <tr><td><strong>Open-Meteo</strong></td><td>Hava durumu, geçmiş hava ortalamaları, şehir arama</td><td>Şehir adı veya koordinat, tarih aralığı</td><td>Hava durumu veya şehir arama kullandığında</td></tr>
 <tr><td><strong>Photon</strong> (komoot GmbH, Almanya)</td><td>Yer adı arama, haritada seçilen noktanın adını bulma</td><td>Yazdığın arama metni veya seçilen koordinat</td><td>Yer ararken veya haritadan yer eklerken</td></tr>
@@ -111,7 +112,7 @@
 <tr><td><strong>Frankfurter</strong></td><td>Avrupa Merkez Bankası referans döviz kurları</td><td>Para birimi çifti ve tarih</td><td>Farklı dövizle harcama girdiğinde</td></tr>
 <tr><td><strong>Web sitesi barındırma sağlayıcısı</strong></td><td>Bu web sitesini ve APK dosyasını sunmak</td><td>IP adresi, tarayıcı bilgisi, istenen sayfa, zaman</td><td>Siteyi ziyaret ettiğinde</td></tr>
 </tbody></table></div>
-<p>Bu servislere yapılan isteklerde adın, e-posta adresin, harcamaların veya belgelerin <strong>gönderilmez</strong> (Supabase ve Google ile giriş hariç). Her internet isteğinde olduğu gibi bu servisler IP adresini görebilir ve kendi gizlilik politikalarına göre kısa süreli sunucu kayıtları tutabilir.</p>
+<p>Bu servislere yapılan isteklerde adın, e-posta adresin, harcamaların veya belgelerin <strong>gönderilmez</strong> (Supabase ve Google ile giriş hariç; Cloudflare Turnstile yalnızca doğrulama sinyallerini görür). Her internet isteğinde olduğu gibi bu servisler IP adresini görebilir ve kendi gizlilik politikalarına göre kısa süreli sunucu kayıtları tutabilir.</p>
 <h3>Diğer alıcılar</h3>
 <ul>
 <li><strong>Seyahat üyeleri:</strong> Bir seyahati paylaştığında veya bir seyahate katıldığında, o seyahatin üyeleri görünen adını, e-posta adresini, profil fotoğrafını, rolünü ve seyahatte yaptığın değişiklikleri (ör. “Son değişiklik: Ayşe · 5 dk önce”) görebilir. Seyahatin içeriği tüm üyelerle paylaşılır.</li>
