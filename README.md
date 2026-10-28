@@ -35,7 +35,7 @@ python tools/build.py
 
 Yasal metinler uygulamadaki *Profil → Yasal ve gizlilik* metinleriyle (TravelPlanner deposu, `Resources/Strings/AppResources.resx`) uyumlu tutulmalıdır; bir metin değişince `updated` tarihini de güncelle.
 
-Telefon görselleri (`assets/img/ekran/`) uygulamanın tasarım prototipinden alınmıştır; gerçek ekran görüntüleriyle aynı adla değiştirilebilir (720 × 1413, WebP).
+Telefon görselleri (`assets/img/ekran/`) uygulamanın gerçek ekran görüntüleridir (Samsung S25, örnek veri). Durum çubuğu ve alt hareket çubuğu kırpılır, 720 × 1465 WebP olarak kaydedilir.
 
 ### Yayın
 

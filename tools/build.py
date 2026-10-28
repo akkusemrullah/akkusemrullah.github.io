@@ -96,7 +96,7 @@ def expand(body):
         extra = ' loading="lazy" decoding="async"' if not alt.startswith("!") else ' fetchpriority="high"'
         alt = alt.lstrip("!")
         return (f'<div class="phone"><img src="assets/img/ekran/{name}.webp" alt="{esc(alt)}" '
-                f'width="720" height="1413"{extra}></div>')
+                f'width="720" height="1465"{extra}></div>')
     return re.sub(r"\{\{phone:([^}]+)\}\}", phone, body)
 
 
