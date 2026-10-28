@@ -1,0 +1,71 @@
+<!--
+title: KVKK başvuru formu
+description: 6698 sayılı KVKK’nın 11. maddesindeki haklarınızı kullanmak için başvuru formu.
+lead: KVKK’nın 11. maddesindeki haklarını kullanmak için aşağıdaki formu doldur. Form hiçbir yere veri göndermez; yalnızca e-posta taslağını hazırlar.
+effective: 10 Ekim 2026
+updated: 10 Ekim 2026
+lang: tr
+-->
+<h2 id="nasil">1. Nasıl çalışır?</h2>
+<p>Aşağıdaki formu doldurduğunda, KVKK’nın 11. maddesi ve Veri Sorumlusuna Başvuru Usul ve Esasları Hakkında Tebliğ’e uygun bir başvuru metni hazırlanır. Bu sayfa <strong>hiçbir bilgiyi sunucuya göndermez</strong> ve kaydetmez; metin yalnızca senin tarayıcında oluşturulur. Ardından metni kendi e-posta uygulamanla gönderebilir, kopyalayabilir veya yazdırıp imzalayabilirsin.</p>
+<ul>
+<li>Başvuruyu, mümkünse <strong>uygulamada kayıtlı e-posta adresinden</strong> gönder; böylece kimliğini ayrıca doğrulamamıza gerek kalmaz.</li>
+<li>Başvurular en geç <strong>30 gün</strong> içinde ücretsiz olarak yanıtlanır.</li>
+<li>Güvenli elektronik imza veya mobil imza ile imzalanmış başvuruları da aynı adrese gönderebilirsin.</li>
+</ul>
+
+<h2 id="form">2. Başvuru formu</h2>
+<form id="kvkk-form" class="form no-print" novalidate data-to="emrullahakkus@gmail.com">
+  <div class="grid2">
+    <div class="field"><label for="f-ad">Ad soyad *</label><input id="f-ad" name="ad" autocomplete="name" required maxlength="120"></div>
+    <div class="field"><label for="f-eposta">E-posta adresin *</label><input id="f-eposta" name="eposta" type="email" autocomplete="email" required maxlength="160"><span class="hint">Yanıtı bu adrese göndeririz.</span></div>
+  </div>
+  <div class="grid2">
+    <div class="field"><label for="f-hesap">Uygulamadaki hesap e-postası</label><input id="f-hesap" name="hesap" type="email" maxlength="160"><span class="hint">Yukarıdakinden farklıysa.</span></div>
+    <div class="field"><label for="f-tel">Telefon (isteğe bağlı)</label><input id="f-tel" name="telefon" type="tel" autocomplete="tel" maxlength="30"></div>
+  </div>
+  <div class="field"><label for="f-adres">Tebligata esas adres (isteğe bağlı)</label><input id="f-adres" name="adres" autocomplete="street-address" maxlength="300"><span class="hint">Yanıtın posta ile gönderilmesini istiyorsan doldur.</span></div>
+  <div class="field"><label for="f-iliski">Uygulama ile ilişkin</label>
+    <select id="f-iliski" name="iliski">
+      <option>Hesabı olan kullanıcıyım</option>
+      <option>Hesapsız (misafir) kullanıcıyım</option>
+      <option>Bir seyahate davet edilen üyeyim</option>
+      <option>Uygulamayı kullanmıyorum; bir seyahatte adım geçiyor</option>
+      <option>Web sitesi ziyaretçisiyim</option>
+      <option>Diğer</option>
+    </select>
+  </div>
+  <fieldset class="field">
+    <legend>Talebin * (birden fazla seçebilirsin)</legend>
+    <label class="checkline"><input type="checkbox" name="talep" value="Kişisel verilerimin işlenip işlenmediğini öğrenmek ve işlenmişse bilgi talep etmek">Kişisel verilerimin işlenip işlenmediğini öğrenmek ve bilgi almak</label>
+    <label class="checkline"><input type="checkbox" name="talep" value="İşlenme amacını ve amacına uygun kullanılıp kullanılmadığını öğrenmek">İşlenme amacını ve amaca uygun kullanılıp kullanılmadığını öğrenmek</label>
+    <label class="checkline"><input type="checkbox" name="talep" value="Verilerimin aktarıldığı yurt içindeki ve yurt dışındaki üçüncü kişileri öğrenmek">Verilerimin aktarıldığı üçüncü kişileri öğrenmek</label>
+    <label class="checkline"><input type="checkbox" name="talep" value="Eksik veya yanlış işlenen verilerimin düzeltilmesi">Eksik veya yanlış verilerimin düzeltilmesi</label>
+    <label class="checkline"><input type="checkbox" name="talep" value="Kişisel verilerimin silinmesi veya yok edilmesi">Kişisel verilerimin silinmesi veya yok edilmesi</label>
+    <label class="checkline"><input type="checkbox" name="talep" value="Düzeltme/silme işlemlerinin verilerin aktarıldığı üçüncü kişilere bildirilmesi">Düzeltme/silme işlemlerinin aktarılan üçüncü kişilere bildirilmesi</label>
+    <label class="checkline"><input type="checkbox" name="talep" value="Münhasıran otomatik sistemlerle analiz sonucu aleyhime doğan bir sonuca itiraz">Otomatik analiz sonucu aleyhime doğan bir sonuca itiraz</label>
+    <label class="checkline"><input type="checkbox" name="talep" value="Kanuna aykırı işleme nedeniyle uğradığım zararın giderilmesi">Kanuna aykırı işleme nedeniyle zararımın giderilmesi</label>
+    <label class="checkline"><input type="checkbox" name="talep" value="Verilerimin bir kopyasının bana verilmesi">Verilerimin bir kopyasının bana verilmesi</label>
+  </fieldset>
+  <div class="field"><label for="f-aciklama">Talebinin açıklaması *</label><textarea id="f-aciklama" name="aciklama" required maxlength="4000" placeholder="Talebini ve ilgili seyahat/hesap bilgilerini olabildiğince açık yaz."></textarea></div>
+  <div class="field"><label for="f-yanit">Yanıtı nasıl almak istersin?</label>
+    <select id="f-yanit" name="yanit"><option>E-posta</option><option>Posta (yukarıdaki adrese)</option></select>
+  </div>
+  <label class="checkline"><input type="checkbox" name="onay" required>Verdiğim bilgilerin doğru olduğunu ve başvurunun bana ait kişisel verilere ilişkin olduğunu (veya ilgili kişi adına yetkili olduğumu) beyan ederim. *</label>
+  <div id="form-error" class="form-error" role="alert" tabindex="-1"></div>
+  <div><button class="btn btn-primary" type="submit">Başvuru metnini hazırla</button></div>
+</form>
+
+<div id="form-output" class="output" aria-live="polite">
+  <h3>Başvuru metnin hazır</h3>
+  <p class="no-print">Metni kontrol et, ardından gönder. E-posta uygulaman açılmazsa metni kopyalayıp <a href="mailto:emrullahakkus@gmail.com">emrullahakkus@gmail.com</a> adresine kendin gönderebilirsin.</p>
+  <pre id="form-text"></pre>
+  <div class="btn-row no-print" style="margin-top:16px">
+    <a id="form-mail" class="btn btn-primary btn-sm" href="mailto:emrullahakkus@gmail.com">E-posta uygulamasında aç</a>
+    <button id="form-copy" class="btn btn-secondary btn-sm" type="button" data-copied="Kopyalandı">Metni kopyala</button>
+    <button id="form-print" class="btn btn-secondary btn-sm" type="button">Yazdır / PDF</button>
+  </div>
+</div>
+
+<h2 id="vekalet">3. Başkası adına başvuru</h2>
+<p>Başka biri adına başvuruyorsan, bu kişi adına başvuru yapmaya yetkili olduğunu gösteren belgeyi (ör. noter onaylı vekaletname, velayet belgesi) başvurunla birlikte göndermelisin. Yetki belgesi olmayan başvurular, ilgili kişinin verilerinin korunması için yanıtlanmaz.</p>
