@@ -137,7 +137,7 @@ code { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size
 
 /* ---------- Phone frame ---------- */
 .phone { position: relative; border-radius: 38px; padding: 7px; background: #0B0C0F; box-shadow: var(--phone-shadow); }
-.phone img { display: block; width: 100%; aspect-ratio: 720 / 1413; border-radius: 31px; background: var(--bg-alt); }
+.phone img { display: block; width: 100%; aspect-ratio: 720 / 1465; border-radius: 31px; background: var(--bg-alt); }
 @media (prefers-color-scheme: dark) { .phone { background: #2A2E36; } }
 
 /* ---------- Hero ---------- */
