@@ -23,7 +23,7 @@ Statik HTML/CSS/JS; çerez, yerel depolama ve dış kaynak yoktur. Tanıtım say
 
 Kökteki `.html` dosyaları üretilir; elle düzenleme. Kaynaklar `src/` altındadır:
 
-- `src/home.html` ana sayfa, `src/yasal.html` yasal belgeler sayfası, `src/invite.html`, `src/404.html`
+- `src/home.html` sade ana sayfa; `src/ozellikler.html` (özellikler ve ekranlar), `src/sss.html`, `src/indir.html` (APK ve kurulum), `src/yasal.html` yasal belgeler, `src/invite.html`, `src/404.html`
 - `src/pages/*.html` yasal belgelerin gövdeleri (başta `title`, `lead`, `effective`, `updated` bilgileri)
 - Ortak üst menü, alt bilgi ve yasal belge listesi `tools/build.py` içindedir; simgeler `tools/icons.py`
 

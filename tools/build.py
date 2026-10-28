@@ -4,7 +4,7 @@
     python3 tools/build.py
 
 Sources:
-  src/home.html, src/yasal.html, src/invite.html, src/404.html   page bodies (layout "plain")
+  src/home.html, ozellikler, sss, indir, yasal, invite, 404 (.html)   page bodies (layout "plain")
   src/pages/*.html                                               legal documents (layout "legal")
 
 Each source starts with an HTML comment holding "key: value" lines (title, description, lead, ...).
@@ -69,8 +69,7 @@ LOGO = ('<svg class="logo" aria-hidden="true" viewBox="0 0 40 40"><rect width="4
 
 CUR = ' aria-current="page"'
 EN = ' hreflang="en" lang="en"'
-NAV = [("index.html#ozellikler", "Özellikler"), ("index.html#ekranlar", "Ekranlar"),
-       ("index.html#gizlilik", "Gizlilik"), ("index.html#sss", "SSS"), ("yasal.html", "Yasal")]
+NAV = [("ozellikler.html", "Özellikler"), ("sss.html", "SSS"), ("yasal.html", "Yasal")]
 
 
 def esc(s):
@@ -135,7 +134,7 @@ def header(active=""):
     return f"""<header class="site-header">
   <div class="wrap bar">
     <a class="brand" href="index.html" aria-label="Travel Planner ana sayfa">{LOGO}<span>Travel Planner</span></a>
-    <nav id="site-nav" class="nav" aria-label="Ana menü">{links}<a class="btn btn-primary btn-sm nav-cta" href="index.html#indir">{icon("download")}Uygulamayı indir</a></nav>
+    <nav id="site-nav" class="nav" aria-label="Ana menü">{links}<a class="btn btn-primary btn-sm nav-cta" href="indir.html">{icon("download")}Uygulamayı indir</a></nav>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menüyü aç/kapat">{icon("menu", "ico i-open")}{icon("x", "ico i-close")}</button>
   </div>
 </header>
@@ -157,10 +156,10 @@ def footer():
       <div>
         <h2>Uygulama</h2>
         <ul>
-          <li><a href="index.html#ozellikler">Özellikler</a></li>
-          <li><a href="index.html#ekranlar">Ekranlar</a></li>
-          <li><a href="index.html#indir">Android APK indir</a></li>
-          <li><a href="index.html#sss">Sık sorulan sorular</a></li>
+          <li><a href="ozellikler.html">Özellikler</a></li>
+          <li><a href="ozellikler.html#ekranlar">Ekranlar</a></li>
+          <li><a href="indir.html">İndir ve kurulum</a></li>
+          <li><a href="sss.html">Sık sorulan sorular</a></li>
         </ul>
       </div>
       <div>
@@ -253,7 +252,8 @@ def main():
         lang = meta.get("lang", "tr")
         write(fname, head(meta["title"], meta["description"], lang) + header("Yasal") + legal_page(fname, meta, expand(body)) + footer())
 
-    for src, out in (("home.html", "index.html"), ("yasal.html", "yasal.html"),
+    for src, out in (("home.html", "index.html"), ("ozellikler.html", "ozellikler.html"), ("sss.html", "sss.html"),
+                     ("indir.html", "indir.html"), ("yasal.html", "yasal.html"),
                      ("invite.html", "invite.html"), ("404.html", "404.html")):
         meta, body = read_source(os.path.join(SRC, src))
         body = expand(body).replace("{{legal-hub}}", legal_hub_cards()).replace("{{apk}}", APK_URL).replace("{{email}}", EMAIL)
