@@ -9,6 +9,7 @@
 <meta name="color-scheme" content="light dark">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="Travel Planner">
 <meta property="og:title" content="Hesap ve veri silme – Travel Planner">
 <meta property="og:description" content="Travel Planner hesabınızı ve verilerinizi nasıl silebileceğiniz, nelerin silindiği ve ne kadar süre saklandığı.">
 <meta property="og:image" content="assets/img/og-image.png">
@@ -21,23 +22,26 @@
 <body>
 <a class="skip" href="#icerik">İçeriğe geç</a>
 <header class="site-header">
-  <div class="wrap">
-    <a class="brand" href="index.html" aria-label="Travel Planner ana sayfa"><svg aria-hidden="true" viewBox="0 0 120 120"><path d="M60 112C60 112 22 72 22 46a38 38 0 0 1 76 0c0 26-38 66-38 66Z" fill="#FFFFFF"/><path d="M37 47 81 28 65 69 57 55Z" fill="var(--hero)"/><path d="M57 55 81 28" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" fill="none"/></svg><span><b>Travel</b><span>Planner</span></span></a>
-    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menüyü aç/kapat"><svg class="" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
-    <nav id="site-nav" class="nav" aria-label="Ana menü"><a href="index.html#ozellikler">Özellikler</a><a href="index.html#butce">Bütçe</a><a href="index.html#gizlilik">Gizlilik</a><a href="index.html#sss">SSS</a><a class="btn btn-light btn-sm" href="index.html#indir">Uygulamayı indir</a></nav>
+  <div class="wrap bar">
+    <a class="brand" href="index.html" aria-label="Travel Planner ana sayfa"><svg class="logo" aria-hidden="true" viewBox="0 0 40 40"><rect width="40" height="40" rx="10" fill="#1E3A8A"/><g transform="translate(20 21) scale(.27) translate(-60 -67)"><path d="M60 112C60 112 22 72 22 46a38 38 0 0 1 76 0c0 26-38 66-38 66Z" fill="#fff"/><path d="M37 47 81 28 65 69 57 55Z" fill="#1E3A8A"/><path d="M57 55 81 28" stroke="#fff" stroke-width="4" stroke-linecap="round" fill="none"/></g></svg><span>Travel Planner</span></a>
+    <nav id="site-nav" class="nav" aria-label="Ana menü"><a href="index.html#ozellikler">Özellikler</a><a href="index.html#ekranlar">Ekranlar</a><a href="index.html#gizlilik">Gizlilik</a><a href="index.html#sss">SSS</a><a href="yasal.html" aria-current="page">Yasal</a><a class="btn btn-primary btn-sm nav-cta" href="index.html#indir"><svg class="ico" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg>Uygulamayı indir</a></nav>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menüyü aç/kapat"><svg class="ico i-open" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg><svg class="ico i-close" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></button>
   </div>
 </header>
 <main id="icerik">
 <section class="page-hero">
   <div class="wrap">
+    <nav class="crumbs" aria-label="Konum"><a href="index.html">Ana sayfa</a><span aria-hidden="true">/</span><a href="yasal.html">Yasal ve haklarınız</a></nav>
     <h1>Hesap ve veri silme</h1>
-    <p>Travel Planner hesabını ve ilişkili verileri istediğin zaman silebilirsin. Bu sayfa, uygulama yüklü olmasa da silme talebinde bulunabilmen için hazırlanmıştır.</p>
-    <div class="dates"><span>Yürürlük tarihi: 10 Ekim 2026</span><span>Son güncelleme: 25 Ekim 2026</span></div>
-    
+    <p class="lead">Travel Planner hesabını ve ilişkili verileri istediğin zaman silebilirsin. Bu sayfa, uygulama yüklü olmasa da silme talebinde bulunabilmen için hazırlanmıştır.</p>
+    <div class="dates"><span>Yürürlük: 10 Ekim 2026</span><span>Son güncelleme: 28 Ekim 2026</span></div>
   </div>
 </section>
-<div class="wrap legal">
-  <nav class="toc" aria-label="İçindekiler"><h2>İçindekiler</h2><ol><li><a href="#hesap-silme">1. Hesabını silmek</a></li><li><a href="#neler-silinir">2. Hesap silindiğinde neler silinir, neler kalır?</a></li><li><a href="#hesapsiz-silme">3. Hesabı silmeden yalnızca bazı verileri silmek</a></li><li><a href="#misafir">4. Misafir modunda kullananlar</a></li><li><a href="#haklar">5. Diğer hakların</a></li></ol></nav>
+<div class="wrap doc">
+  <aside class="doc-side">
+    <details class="toc" open><summary>Bu sayfada<svg class="ico" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></summary><ol><li><a href="#hesap-silme">1. Hesabını silmek</a></li><li><a href="#neler-silinir">2. Hesap silindiğinde neler silinir, neler kalır?</a></li><li><a href="#hesapsiz-silme">3. Hesabı silmeden yalnızca bazı verileri silmek</a></li><li><a href="#misafir">4. Misafir modunda kullananlar</a></li><li><a href="#haklar">5. Diğer hakların</a></li></ol></details>
+    <nav class="doc-nav" aria-label="Yasal belgeler"><h2>Yasal belgeler</h2><ul><li><a href="gizlilik-politikasi.html"><svg class="ico" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg><span>Gizlilik Politikası</span></a></li><li><a href="kvkk-aydinlatma-metni.html"><svg class="ico" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="M7 21h10"/><path d="M12 3v18"/><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/></svg><span>KVKK Aydınlatma Metni</span></a></li><li><a href="acik-riza-metni.html"><svg class="ico" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Açık Rıza Metni</span></a></li><li><a href="cerez-politikasi.html"><svg class="ico" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5"/><path d="M8.5 8.5v.01"/><path d="M16 15.5v.01"/><path d="M12 12v.01"/><path d="M11 17v.01"/><path d="M7 14v.01"/></svg><span>Çerez Politikası</span></a></li><li><a href="kullanim-kosullari.html"><svg class="ico" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg><span>Kullanım Koşulları</span></a></li><li><a href="yapay-zeka-feragatnamesi.html"><svg class="ico" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/><path d="M20 3v4"/><path d="M22 5h-4"/><path d="M4 17v2"/><path d="M5 18H3"/></svg><span>Yapay Zekâ Feragatnamesi</span></a></li><li><a href="iade-politikasi.html"><svg class="ico" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z"/><path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"/><path d="M12 17.5v-11"/></svg><span>İptal ve İade Politikası</span></a></li><li><a href="acik-kaynak-lisanslari.html"><svg class="ico" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></svg><span>Lisanslar ve atıflar</span></a></li><li><a href="hesap-ve-veri-silme.html" aria-current="page"><svg class="ico" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="m17 8 5 5"/><path d="m22 8-5 5"/></svg><span>Hesap ve veri silme</span></a></li><li><a href="kvkk-basvuru.html"><svg class="ico" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="8" height="4" x="8" y="2" rx="1" ry="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M12 11h4"/><path d="M12 16h4"/><path d="M8 11h.01"/><path d="M8 16h.01"/></svg><span>KVKK başvuru formu</span></a></li><li><a href="privacy-policy.html"><svg class="ico" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg><span>Privacy Policy (English)</span></a></li></ul></nav>
+  </aside>
   <article class="prose">
 <div class="callout">
 <p><strong>Uygulama:</strong> Travel Planner · <strong>Geliştirici:</strong> Emrullah Akkuş · <strong>İletişim:</strong> <a href="mailto:emrullahakkus@gmail.com">emrullahakkus@gmail.com</a></p>
@@ -48,7 +52,9 @@
 <ol>
 <li>Travel Planner uygulamasını aç ve hesabınla giriş yap.</li>
 <li>Alttaki menüden <strong>Profil</strong> sekmesine git.</li>
-<li>Hesap kartında <strong>Hesabı sil</strong> seçeneğine dokun ve onayla. Bu işlem internet bağlantısı gerektirir.</li>
+<li>En alttaki <strong>Hesap</strong> bölümünde <strong>Hesabımı sil</strong>’e dokun ve uyarıyı okuyup <strong>Devam et</strong>’i seç. Bu işlem internet bağlantısı gerektirir.</li>
+<li>Başkalarıyla paylaştığın her seyahat için <strong>Sahipliği devret</strong> (bir üyeyi seçersin) ya da <strong>Herkes için sil</strong> seçeneğini belirle.</li>
+<li>Onaylamak için kutuya <strong>SİL</strong> yaz ve <strong>Hesabı sil</strong>’e dokun. İşlem bitince uygulama misafir olarak devam eder.</li>
 </ol>
 <p>Bu seçeneği uygulamanın kullandığın sürümünde göremiyorsan, uygulamayı güncelle veya aşağıdaki B yöntemini kullan.</p>
 
@@ -73,14 +79,17 @@
 <tr><td>Cihaz özeti ve bu cihazda kullanılan hesap kaydı (hesabın e-postası, ilk/son görülme)</td><td>Kötüye kullanımı önlemek için cihaz son görüldükten sonra 1 yıl tutulur, ardından otomatik olarak silinir.</td></tr>
 <tr><td>Altyapı sağlayıcısının olağan güvenlik yedekleri</td><td>Yedek döngüsü içinde, en geç 30 gün sonra kendiliğinden silinir. Bu süre içinde yedekler yalnızca felaket kurtarma amacıyla kullanılır.</td></tr>
 <tr><td>Destek ve KVKK başvurusu yazışmaları</td><td>Yasal yükümlülükler ve olası uyuşmazlıklar için zamanaşımı süreleri boyunca saklanabilir.</td></tr>
-<tr><td>Cihazındaki yerel kopya</td><td>Telefonundaki uygulama verileri sunucudan bağımsızdır. Bunları uygulamayı kaldırarak veya Ayarlar → Uygulamalar → Travel Planner → Depolama → Verileri temizle yoluyla silebilirsin.</td></tr>
+<tr><td>Yüklenen belge ve fotoğraf dosyaları (kapak fotoğrafları dahil)</td><td>Buluttan hemen, bir bağlantı sorunu olursa en geç 2 gün içinde silinir.</td></tr>
+<tr><td>Yapay zekâ planları</td><td>Sunucuda zaten en geç 1 gün tutulur. Telefonundaki hazır planlar, hesabın o telefondaki verisiyle birlikte silinir.</td></tr>
+<tr><td>Cihazındaki yerel kopya</td><td>Hesabını uygulamadan sildiğin telefondaki hesap verisi de silinir. Hesabın başka bir telefonda açıksa orada oturum bir sonraki açılışta kapanır. Misafir olarak girdiğin veriler ve diğer telefonlardaki kopyalar için uygulamayı kaldırabilir veya Ayarlar → Uygulamalar → Travel Planner → Depolama → Verileri temizle yolunu kullanabilirsin.</td></tr>
 </tbody></table></div>
 
 <h2 id="hesapsiz-silme">3. Hesabı silmeden yalnızca bazı verileri silmek</h2>
 <ul>
-<li><strong>Bir seyahati silmek:</strong> Seyahatin detay sayfasından silebilirsin. Silinen seyahat 30 gün boyunca Profil → Veriler → Çöp kutusu’nda geri alınabilir şekilde tutulur, ardından cihazdan ve sunucudan kalıcı olarak silinir.</li>
+<li><strong>Bir seyahati silmek:</strong> Seyahatin detay sayfasından silebilirsin. Silinen seyahat 30 gün boyunca Profil → Çöp kutusu’nda geri alınabilir şekilde tutulur. Süre dolunca ya da çöp kutusundan kalıcı olarak silince cihazdan silinir; sunucudaki kopyası en geç 30 gün, belge dosyaları en geç 31 gün içinde tamamen temizlenir.</li>
 <li><strong>Tek tek öğeleri silmek:</strong> Etkinlik, yer, görev, harcama, katılımcı ve belgeleri ilgili ekrandan silebilirsin; aynı 30 günlük çöp kutusu kuralı geçerlidir.</li>
 <li><strong>Paylaşılan bir seyahatten ayrılmak:</strong> Seyahatin Üyeler ekranından “Seyahatten ayrıl” seçeneğini kullan.</li>
+<li><strong>Yalnızca bir telefondan silmek:</strong> Profil → Çıkış yap → <strong>Çıkış yap ve bu cihazdan sil</strong> hesabının o telefondaki kopyasını siler; buluttaki verilerin kalır.</li>
 <li><strong>Başka bir veriyi silmemizi istemek:</strong> <a href="mailto:emrullahakkus@gmail.com">emrullahakkus@gmail.com</a> adresine hangi verinin silinmesini istediğini yazarak talepte bulunabilirsin.</li>
 </ul>
 
@@ -89,7 +98,6 @@
 
 <h2 id="haklar">5. Diğer hakların</h2>
 <p>Silme dışında verilerine erişme, düzeltme ve diğer KVKK haklarını kullanmak için <a href="kvkk-basvuru.html">KVKK başvuru formunu</a> kullanabilirsin. Ayrıntılı bilgi <a href="gizlilik-politikasi.html">Gizlilik Politikası</a>’nda yer alır.</p>
-
   </article>
 </div>
 </main>
@@ -97,42 +105,33 @@
   <div class="wrap">
     <div class="foot-grid">
       <div class="foot-brand">
-        <a class="brand" href="index.html" aria-label="Travel Planner ana sayfa"><svg aria-hidden="true" viewBox="0 0 120 120"><path d="M60 112C60 112 22 72 22 46a38 38 0 0 1 76 0c0 26-38 66-38 66Z" fill="#FFFFFF"/><path d="M37 47 81 28 65 69 57 55Z" fill="var(--hero)"/><path d="M57 55 81 28" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" fill="none"/></svg><span><b>Travel</b><span>Planner</span></span></a>
-        <p>Seyahat planı, bütçe, belgeler ve harita tek uygulamada. Reklam yok, takip yok.</p>
+        <a class="brand" href="index.html" aria-label="Travel Planner ana sayfa"><svg class="logo" aria-hidden="true" viewBox="0 0 40 40"><rect width="40" height="40" rx="10" fill="#1E3A8A"/><g transform="translate(20 21) scale(.27) translate(-60 -67)"><path d="M60 112C60 112 22 72 22 46a38 38 0 0 1 76 0c0 26-38 66-38 66Z" fill="#fff"/><path d="M37 47 81 28 65 69 57 55Z" fill="#1E3A8A"/><path d="M57 55 81 28" stroke="#fff" stroke-width="4" stroke-linecap="round" fill="none"/></g></svg><span>Travel Planner</span></a>
+        <p>Seyahatini tek yerden planla: gün gün plan, harita, bütçe, harcama bölüşme ve belgeler tek uygulamada. Reklam yok, takip yok.</p>
+        <p class="foot-pub">Bir <strong>EAKSOFT</strong> uygulamasıdır.</p>
       </div>
       <div>
         <h2>Uygulama</h2>
         <ul>
           <li><a href="index.html#ozellikler">Özellikler</a></li>
+          <li><a href="index.html#ekranlar">Ekranlar</a></li>
           <li><a href="index.html#indir">Android APK indir</a></li>
           <li><a href="index.html#sss">Sık sorulan sorular</a></li>
-          <li><a href="acik-kaynak-lisanslari.html">Lisanslar ve atıflar</a></li>
         </ul>
       </div>
       <div>
         <h2>Yasal</h2>
-        <ul>
-          <li><a href="gizlilik-politikasi.html">Gizlilik Politikası</a></li>
-          <li><a href="kvkk-aydinlatma-metni.html">KVKK Aydınlatma Metni</a></li>
-          <li><a href="kullanim-kosullari.html">Kullanım Koşulları</a></li>
-          <li><a href="cerez-politikasi.html">Çerez Politikası</a></li>
-          <li><a href="acik-riza-metni.html">Açık Rıza Metni</a></li>
-          <li><a href="yapay-zeka-feragatnamesi.html">Yapay Zekâ Feragatnamesi</a></li>
-          <li><a href="iade-politikasi.html">İptal ve İade Politikası</a></li>
-          <li><a href="privacy-policy.html" hreflang="en" lang="en">Privacy Policy (English)</a></li>
-        </ul>
+        <ul><li><a href="gizlilik-politikasi.html">Gizlilik Politikası</a></li><li><a href="kvkk-aydinlatma-metni.html">KVKK Aydınlatma Metni</a></li><li><a href="acik-riza-metni.html">Açık Rıza Metni</a></li><li><a href="cerez-politikasi.html">Çerez Politikası</a></li><li><a href="kullanim-kosullari.html">Kullanım Koşulları</a></li><li><a href="yapay-zeka-feragatnamesi.html">Yapay Zekâ Feragatnamesi</a></li><li><a href="iade-politikasi.html">İptal ve İade Politikası</a></li><li><a href="acik-kaynak-lisanslari.html">Lisanslar ve atıflar</a></li><li><a href="privacy-policy.html" hreflang="en" lang="en">Privacy Policy (English)</a></li></ul>
       </div>
       <div>
-        <h2>Haklarınız</h2>
-        <ul>
-          <li><a href="hesap-ve-veri-silme.html">Hesap ve veri silme</a></li>
-          <li><a href="kvkk-basvuru.html">KVKK başvuru formu</a></li>
-          <li><a href="mailto:emrullahakkus@gmail.com">İletişim: emrullahakkus@gmail.com</a></li>
+        <h2>Haklarınız ve destek</h2>
+        <ul><li><a href="hesap-ve-veri-silme.html">Hesap ve veri silme</a></li><li><a href="kvkk-basvuru.html">KVKK başvuru formu</a></li>
+          <li><a href="yasal.html">Tüm yasal belgeler</a></li>
+          <li><a href="mailto:emrullahakkus@gmail.com">emrullahakkus@gmail.com</a></li>
         </ul>
       </div>
     </div>
     <div class="foot-bottom">
-      <span>© <span data-year>2026</span> Emrullah Akkuş · Travel Planner. Tüm hakları saklıdır.</span>
+      <span>© <span data-year>2026</span> EAKSOFT · Emrullah AKKUŞ. Tüm hakları saklıdır.</span>
       <span>Harita verisi © <a href="https://www.openstreetmap.org/copyright" rel="noopener">OpenStreetMap katkıcıları</a> · OpenMapTiles · OpenFreeMap · Hava verisi <a href="https://open-meteo.com/" rel="noopener">Open-Meteo.com</a> (CC BY 4.0)</span>
     </div>
   </div>

@@ -15,6 +15,23 @@
     });
   }
 
+  // Küçük ekranda "Bu sayfada" listesi kapalı başlar
+  var toc = document.querySelector("details.toc");
+  if (toc && window.matchMedia && window.matchMedia("(max-width: 960px)").matches) toc.open = false;
+
+  // Ekran galerisi: önceki / sonraki
+  document.querySelectorAll("[data-gallery]").forEach(function (g) {
+    var track = g.querySelector(".gallery-track");
+    if (!track) return;
+    g.querySelectorAll("[data-dir]").forEach(function (b) {
+      b.addEventListener("click", function () {
+        var item = track.querySelector("li");
+        var step = item ? item.getBoundingClientRect().width + 24 : 260;
+        track.scrollBy({ left: step * 2 * Number(b.getAttribute("data-dir")), behavior: "smooth" });
+      });
+    });
+  });
+
   // Yıl
   document.querySelectorAll("[data-year]").forEach(function (el) { el.textContent = String(new Date().getFullYear()); });
 

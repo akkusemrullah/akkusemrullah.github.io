@@ -3,14 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Travel Planner – Seyahat planı, bütçe ve harita tek uygulamada</title>
-<meta name="description" content="Gün gün plan, harita, hava durumu, bütçe ve harcama bölüşme tek uygulamada. Hesapsız kullanım, reklam ve takip yok. Android APK’yı indir.">
+<title>Travel Planner – Seyahatini tek yerden planla</title>
+<meta name="description" content="Gün gün plan, harita, hava durumu, bütçe, harcama bölüşme, yapay zekâ ile plan ve hazır rotalar tek uygulamada. Hesapsız kullanım, reklam ve takip yok.">
 <meta name="theme-color" content="#1E3A8A">
 <meta name="color-scheme" content="light dark">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Travel Planner – Seyahat planı, bütçe ve harita tek uygulamada">
-<meta property="og:description" content="Gün gün plan, harita, hava durumu, bütçe ve harcama bölüşme tek uygulamada. Hesapsız kullanım, reklam ve takip yok. Android APK’yı indir.">
+<meta property="og:site_name" content="Travel Planner">
+<meta property="og:title" content="Travel Planner – Seyahatini tek yerden planla">
+<meta property="og:description" content="Gün gün plan, harita, hava durumu, bütçe, harcama bölüşme, yapay zekâ ile plan ve hazır rotalar tek uygulamada. Hesapsız kullanım, reklam ve takip yok.">
 <meta property="og:image" content="assets/img/og-image.png">
 <meta property="og:locale" content="tr_TR">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -21,145 +22,235 @@
 <body>
 <a class="skip" href="#icerik">İçeriğe geç</a>
 <header class="site-header">
-  <div class="wrap">
-    <a class="brand" href="#ust" aria-label="Travel Planner ana sayfa"><svg aria-hidden="true" viewBox="0 0 120 120"><path d="M60 112C60 112 22 72 22 46a38 38 0 0 1 76 0c0 26-38 66-38 66Z" fill="#FFFFFF"/><path d="M37 47 81 28 65 69 57 55Z" fill="var(--hero)"/><path d="M57 55 81 28" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" fill="none"/></svg><span><b>Travel</b><span>Planner</span></span></a>
-    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menüyü aç/kapat"><svg class="" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
-    <nav id="site-nav" class="nav" aria-label="Ana menü"><a href="#ozellikler">Özellikler</a><a href="#butce">Bütçe</a><a href="#gizlilik">Gizlilik</a><a href="#sss">SSS</a><a class="btn btn-light btn-sm" href="#indir">Uygulamayı indir</a></nav>
+  <div class="wrap bar">
+    <a class="brand" href="index.html" aria-label="Travel Planner ana sayfa"><svg class="logo" aria-hidden="true" viewBox="0 0 40 40"><rect width="40" height="40" rx="10" fill="#1E3A8A"/><g transform="translate(20 21) scale(.27) translate(-60 -67)"><path d="M60 112C60 112 22 72 22 46a38 38 0 0 1 76 0c0 26-38 66-38 66Z" fill="#fff"/><path d="M37 47 81 28 65 69 57 55Z" fill="#1E3A8A"/><path d="M57 55 81 28" stroke="#fff" stroke-width="4" stroke-linecap="round" fill="none"/></g></svg><span>Travel Planner</span></a>
+    <nav id="site-nav" class="nav" aria-label="Ana menü"><a href="index.html#ozellikler">Özellikler</a><a href="index.html#ekranlar">Ekranlar</a><a href="index.html#gizlilik">Gizlilik</a><a href="index.html#sss">SSS</a><a href="yasal.html">Yasal</a><a class="btn btn-primary btn-sm nav-cta" href="index.html#indir"><svg class="ico" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg>Uygulamayı indir</a></nav>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menüyü aç/kapat"><svg class="ico i-open" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg><svg class="ico i-close" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></button>
   </div>
 </header>
 <main id="icerik">
-<section id="ust" class="hero">
-  <div class="wrap">
+<section class="hero">
+  <div class="wrap hero-grid">
     <div class="hero-copy">
-      <h1>Seyahatini baştan sona tek yerde planla</h1>
-      <p class="lead">Gün gün plan, harita, hava durumu, bütçe ve harcama bölüşme. Seyahatin için gereken her şey tek uygulamada.</p>
+      <p class="pill"><svg class="ico" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 10v6a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-6Z"/><path d="M7 10a5 5 0 0 1 10 0"/><path d="M9 7 7.5 4.5M15 7l1.5-2.5"/><path d="M4.5 10.5v4M19.5 10.5v4M10 17v3M14 17v3"/><circle cx="10" cy="8.5" r=".5"/><circle cx="14" cy="8.5" r=".5"/></svg>Android için ücretsiz · Reklamsız</p>
+      <h1>Seyahatini tek yerden planla</h1>
+      <p class="lead">Gün gün plan, harita, hava durumu, bütçe ve harcama bölüşme tek uygulamada. Planını kendin kur, yapay zekâya hazırlat ya da Keşfet’teki hazır rotalardan başla.</p>
       <div class="btn-row">
-        <a class="btn btn-light" href="#indir"><svg class="" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg>Uygulamayı indir</a>
-        <a class="btn btn-outline" href="#ozellikler">Özellikleri gör</a>
+        <a class="btn btn-primary btn-lg" href="#indir"><svg class="ico" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg>Uygulamayı indir</a>
+        <a class="btn btn-secondary btn-lg" href="#ozellikler">Özellikleri incele</a>
       </div>
-      <ul class="hero-badges">
-        <li><svg class="" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m4.9 4.9 14.2 14.2"/></svg>Reklam yok</li>
-        <li><svg class="" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.73 5.08A10.43 10.43 0 0 1 12 5c7 0 10 7 10 7a13.16 13.16 0 0 1-1.67 2.68"/><path d="M6.61 6.61A13.53 13.53 0 0 0 2 12s3 7 10 7a9.74 9.74 0 0 0 5.39-1.61"/><path d="m2 2 20 20"/><path d="M9.88 9.88a3 3 0 1 0 4.24 4.24"/></svg>Takip ve analiz aracı yok</li>
-        <li><svg class="" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h.01"/><path d="M8.5 16.43a5 5 0 0 1 7 0"/><path d="M2 8.82a15 15 0 0 1 4.17-2.65"/><path d="M10.66 5c4.01-.36 8.14.9 11.34 3.76"/><path d="M16.85 11.25a10 10 0 0 1 2.22 1.68"/><path d="M5 12.86a10 10 0 0 1 5.17-2.69"/><path d="m2 2 20 20"/></svg>İnternetsiz de çalışır</li>
+      <ul class="trust">
+        <li><svg class="ico" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg>Hesap açmadan kullan</li>
+        <li><svg class="ico" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.73 5.08A10.43 10.43 0 0 1 12 5c7 0 10 7 10 7a13.16 13.16 0 0 1-1.67 2.68"/><path d="M6.61 6.61A13.53 13.53 0 0 0 2 12s3 7 10 7a9.74 9.74 0 0 0 5.39-1.61"/><path d="m2 2 20 20"/><path d="M9.88 9.88a3 3 0 1 0 4.24 4.24"/></svg>Reklam ve takip yok</li>
+        <li><svg class="ico" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h.01"/><path d="M8.5 16.43a5 5 0 0 1 7 0"/><path d="M2 8.82a15 15 0 0 1 4.17-2.65"/><path d="M10.66 5c4.01-.36 8.14.9 11.34 3.76"/><path d="M16.85 11.25a10 10 0 0 1 2.22 1.68"/><path d="M5 12.86a10 10 0 0 1 5.17-2.69"/><path d="m2 2 20 20"/></svg>İnternetsiz de çalışır</li>
       </ul>
     </div>
-    <div class="hero-phones" aria-hidden="false">
-      <div class="phone"><div class="screen"><img src="assets/img/plan.webp" alt="Gün gün plan ekranı" width="720" height="1493" fetchpriority="high"></div></div>
-      <div class="phone center"><div class="screen"><img src="assets/img/ana-sayfa.webp" alt="Uygulamanın ana sayfası: devam eden seyahat kartı ve genel bakış" width="720" height="1493" fetchpriority="high"></div></div>
-      <div class="phone"><div class="screen"><img src="assets/img/seyahat-detay.webp" alt="Seyahat detayı ekranı: tarih, süre ve bütçe" width="720" height="1493" fetchpriority="high"></div></div>
+    <div class="hero-media" aria-hidden="false">
+      <div class="hero-back"><div class="phone"><img src="assets/img/ekran/seyahat-detay.webp" alt="Seyahat detayı: biniş kartı, tarih, süre ve bütçe" width="720" height="1413" fetchpriority="high"></div></div>
+      <div class="hero-front"><div class="phone"><img src="assets/img/ekran/ana-sayfa.webp" alt="Ana sayfa: devam eden seyahat ve genel bakış" width="720" height="1413" fetchpriority="high"></div></div>
     </div>
   </div>
-</section><section id="ozellikler" class="section">
-  <div class="wrap section-head">
-    <div class="eyebrow">Özellikler</div>
-    <h2 class="h2">Planlamadan dönüşe kadar her adım</h2>
+</section>
+
+<section class="facts" aria-label="Öne çıkanlar">
+  <div class="wrap facts-grid">
+    <div class="fact"><svg class="ico" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></svg><div><strong>Verilerin AB’de</strong><span>Hesaplı kullanımda Frankfurt’taki sunucular</span></div></div>
+    <div class="fact"><svg class="ico" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M8 16H3v5"/></svg><div><strong>Cihazlar arası eşitleme</strong><span>Telefon değişse de seyahatlerin seninle</span></div></div>
+    <div class="fact"><svg class="ico" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg><div><strong>Birlikte planla</strong><span>Davet koduyla seyahati paylaş</span></div></div>
+    <div class="fact"><svg class="ico" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg><div><strong>Türkçe ve İngilizce</strong><span>Açık ve koyu tema</span></div></div>
   </div>
-  <div class="wrap feature">
-  <div class="feature-copy">
-    <div class="eyebrow">Gün gün plan</div>
-    <h3 class="h3">Her günü saat saat planla</h3>
-    <p>Uçuş, otel girişi, gezi, akşam yemeği. Her etkinliği gününe ve saatine yerleştir, plan değişince sürükleyip yeniden sırala.</p>
-    <ul class="checks"><li><svg class="" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Her gün ayrı sekmede</span></li><li><svg class="" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Sürükleyerek sırala, günler arasında taşı</span></li><li><svg class="" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Etkinliklere not ve kayıtlı yer ekle</span></li><li><svg class="" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Seyahat sırasında “Bugün” kartı</span></li></ul>
-  </div>
-  <div class="feature-media"><div class="phone phone-lg"><div class="screen"><img src="assets/img/plan.webp" alt="Gün gün plan ekranı: saatli etkinlikler" width="720" height="1493" loading="lazy" decoding="async"></div></div></div>
-</div>
-  <div class="wrap feature reverse">
-  <div class="feature-copy">
-    <div class="eyebrow">Harita</div>
-    <h3 class="h3">Gezilecek yerler tek haritada</h3>
-    <p>Kaydettiğin tüm durakları şehir haritasında gör. Hangisine gittin, hangisi sırada, bir bakışta anla.</p>
-    <ul class="checks"><li><svg class="" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Ziyaret edilen ve bekleyen yerler ayrı renkte</span></li><li><svg class="" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Günün rotasını harita üzerinde göster</span></li><li><svg class="" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Haritaya basılı tutarak yer ekle</span></li></ul>
-  </div>
-  <div class="feature-media"><div class="phone phone-lg"><div class="screen"><img src="assets/img/harita.webp" alt="Harita ekranı: kayıtlı yerler ve ziyaret durumu" width="720" height="1493" loading="lazy" decoding="async"></div></div></div>
-</div>
-</section><section id="butce" class="section tint">
-  <div class="wrap section-head" style="padding-top:96px">
-    <div class="eyebrow">Bütçe ve harcamalar</div>
-    <h2 class="h2">Paran nereye gidiyor, bir bakışta gör</h2>
-  </div>
-  <div class="wrap feature">
-  <div class="feature-copy">
-    <div class="eyebrow">Harcama analizi</div>
-    <h3 class="h3">Ne kadar harcadın, ne kadar kaldı</h3>
-    <p>Seyahat bütçeni belirle, harcamalarını gir. Ne kadar harcadığını, ne kadar kaldığını ve en çok neye para gittiğini uygulama göstersin.</p>
-    <ul class="checks"><li><svg class="" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Konaklama, ulaşım, yemek gibi kategori dağılımı</span></li><li><svg class="" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Günlük harcama grafiği ve günlük bütçe çizgisi</span></li><li><svg class="" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Farklı dövizle giriş, seyahatin para birimine otomatik çeviri</span></li><li><svg class="" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Bütçenin %80’i ve %100’ünde bildirim</span></li></ul>
-  </div>
-  <div class="feature-media"><div class="phone phone-lg"><div class="screen"><img src="assets/img/harcama-analizi.webp" alt="Harcama analizi ekranı: kategori dağılımı ve günlük harcama grafiği" width="720" height="1493" loading="lazy" decoding="async"></div></div></div>
-</div>
-  <div style="padding-bottom:24px"><div class="wrap feature reverse">
-  <div class="feature-copy">
-    <div class="eyebrow">Harcama bölüşme</div>
-    <h3 class="h3">Kim kime ne kadar borçlu?</h3>
-    <p>Arkadaşlarınla çıktığın seyahatte hesap karışmasın. Kimin ne ödediğini gir, kimin kime ne kadar ödeyeceğini uygulama hesaplasın.</p>
-    <ul class="checks"><li><svg class="" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Her katılımcının ödediği ve payı</span></li><li><svg class="" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Alacaklı ve borçlu olan net görünür</span></li><li><svg class="" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Seyahat üyelerini tek dokunuşla ekle</span></li><li><svg class="" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Harcamaları CSV olarak dışa aktar</span></li></ul>
-  </div>
-  <div class="feature-media"><div class="phone phone-lg"><div class="screen"><img src="assets/img/bolusme.webp" alt="Harcama bölüşme ekranı: katılımcılar ve borç özeti" width="720" height="1493" loading="lazy" decoding="async"></div></div></div>
-</div></div>
-</section><section id="daha-fazla" class="section">
-  <div class="wrap pad-y stack-56">
-    <div class="section-head" style="padding-top:0">
-      <div class="eyebrow">Daha fazlası</div>
-      <h2 class="h2">Yola çıkmadan önce her şey hazır</h2>
-    </div>
-    <div class="cards3">
-      <article class="card-shot"><div><h3>Hava durumu</h3><p>Gideceğin şehrin anlık havası ve seyahatin her günü için tahmin.</p></div><div class="phone phone-top"><div class="screen"><img src="assets/img/hava-durumu.webp" alt="Hava durumu ekranı" width="720" height="1493" loading="lazy" decoding="async"></div></div></article>
-      <article class="card-shot"><div><h3>Akıllı bavul önerileri</h3><p>Hava tahmini, seyahat süresi ve planına göre yanına alman gerekenler.</p></div><div class="phone phone-top"><div class="screen"><img src="assets/img/bavul.webp" alt="Görevler ve akıllı bavul önerileri ekranı" width="720" height="1493" loading="lazy" decoding="async"></div></div></article>
-      <article class="card-shot"><div><h3>Tüm seyahatlerin</h3><p>Yaklaşan, devam eden ve tamamlanan seyahatleri ara, filtrele, sırala.</p></div><div class="phone phone-top"><div class="screen"><img src="assets/img/seyahatlerim.webp" alt="Seyahatlerim ekranı" width="720" height="1493" loading="lazy" decoding="async"></div></div></article>
-    </div>
-    <div class="minis">
-      <div class="mini"><h3>Birlikte planla</h3><p>Arkadaşlarını davet koduyla seyahate ekle; düzenleyici ya da görüntüleyici olarak yetki ver.</p></div>
-      <div class="mini"><h3>Belgelerin yanında</h3><p>Bilet, rezervasyon ve fotoğrafları seyahate ekle; internet olmadan da aç.</p></div>
-      <div class="mini"><h3>Cihazların arasında eşitle</h3><p>İstersen hesap aç; seyahatlerin internet geldiğinde diğer cihazlarınla eşitlensin.</p></div>
-      <div class="mini"><h3>Paylaş ve yedekle</h3><p>Planı metin veya PDF olarak paylaş, tüm verini tek dosyaya yedekle.</p></div>
-    </div>
-  </div>
-</section><section class="night">
+</section>
+
+<section id="ozellikler" class="section">
   <div class="wrap">
-    <div class="night-copy">
-      <div class="eyebrow">Karanlık tema</div>
-      <h2 class="h2">Gece de göz yormaz</h2>
-      <p>Gece uçuşunda ya da otel odasında plana bakarken ekran gözünü almasın. Tüm ekranlar karanlık temada da aynı netlikte.</p>
+    <div class="section-head">
+      <p class="eyebrow">Özellikler</p>
+      <h2 class="h2">Planlamadan dönüşe kadar her adım</h2>
+      <p class="sub">Seyahat öncesi, sırası ve sonrası için ihtiyacın olan araçlar tek yerde.</p>
     </div>
-    <div class="night-media"><div class="phone phone-top"><div class="screen"><img src="assets/img/karanlik-tema.webp" alt="Karanlık temada ana sayfa ekranı" width="720" height="1493" loading="lazy" decoding="async"></div></div></div>
+    <div class="features">
+      <article class="feature-card"><svg class="ico" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/><path d="M8 14h.01"/><path d="M12 14h.01"/><path d="M16 14h.01"/><path d="M8 18h.01"/><path d="M12 18h.01"/><path d="M16 18h.01"/></svg><h3>Gün gün plan</h3><p>Etkinlikleri gününe ve saatine yerleştir, sürükleyip yeniden sırala.</p></article>
+      <article class="feature-card"><svg class="ico" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0z"/><path d="M15 5.764v15"/><path d="M9 3.236v15"/></svg><h3>Harita ve yol tarifi</h3><p>Kayıtlı yerleri ve günün rotasını haritada gör, tek dokunuşla yol tarifi al.</p></article>
+      <article class="feature-card"><svg class="ico" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="M20 12h2"/><path d="m19.07 4.93-1.41 1.41"/><path d="M15.947 12.65a4 4 0 0 0-5.925-4.128"/><path d="M13 22H7a5 5 0 1 1 4.9-6H13a3 3 0 0 1 0 6Z"/></svg><h3>Hava durumu</h3><p>Şehrin anlık havası ve seyahatin her günü için tahmin.</p></article>
+      <article class="feature-card"><svg class="ico" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 20a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2"/><path d="M8 18V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v14"/><path d="M10 20h4"/><circle cx="16" cy="20" r="2"/><circle cx="8" cy="20" r="2"/></svg><h3>Akıllı bavul</h3><p>Hava, süre ve plana göre öneriler; görevler ve bavul şablonları.</p></article>
+      <article class="feature-card"><svg class="ico" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"/><path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"/></svg><h3>Bütçe ve harcamalar</h3><p>Farklı dövizle gir, seyahatin para birimine otomatik çevrilsin.</p></article>
+      <article class="feature-card"><svg class="ico" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12c.552 0 1.005-.449.95-.998a10 10 0 0 0-8.953-8.951c-.55-.055-.998.398-.998.95v8a1 1 0 0 0 1 1z"/><path d="M21.21 15.89A10 10 0 1 1 8 2.83"/></svg><h3>Harcama analizi</h3><p>Kategori dağılımı, günlük harcama ve bütçe uyarıları.</p></article>
+      <article class="feature-card"><svg class="ico" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z"/><path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"/><path d="M12 17.5v-11"/></svg><h3>Harcama bölüşme</h3><p>Kimin ne ödediğini gir, kimin kime ne kadar borçlu olduğunu gör.</p></article>
+      <article class="feature-card"><svg class="ico" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg><h3>Birlikte planla</h3><p>Arkadaşlarını davet koduyla ekle, düzenleyici ya da görüntüleyici yap.</p></article>
+      <article class="feature-card"><svg class="ico" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/><path d="M20 3v4"/><path d="M22 5h-4"/><path d="M4 17v2"/><path d="M5 18H3"/></svg><h3>Yapay zekâ ile planla</h3><p>Birkaç soruyu yanıtla, gün gün rota önerisi hazır olsun.</p></article>
+      <article class="feature-card"><svg class="ico" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z"/></svg><h3>Keşfet</h3><p>Hazır seyahat planlarını incele, tek dokunuşla kendi seyahatine ekle.</p></article>
+      <article class="feature-card"><svg class="ico" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg><h3>Belgeler</h3><p>Bilet, rezervasyon ve fotoğrafları seyahate ekle; internetsiz aç.</p></article>
+      <article class="feature-card"><svg class="ico" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.268 21a2 2 0 0 0 3.464 0"/><path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"/></svg><h3>Hatırlatmalar ve yedek</h3><p>Hazırlık ve günün planı hatırlatmaları; tüm verini tek dosyaya yedekle.</p></article>
+    </div>
   </div>
-</section><section id="gizlilik" class="section tint">
-  <div class="wrap pad-y stack-56">
-    <div class="section-head" style="padding-top:0">
-      <div class="eyebrow">Gizlilik</div>
-      <h2 class="h2">Verilerin senin, kontrol sende</h2>
-      <p class="muted" style="max-width:640px;font-size:18px">Hesap açmadan kullanabilirsin. Hesap açarsan verilerin yalnızca eşitleme ve paylaşım için Avrupa Birliği’ndeki sunucularda saklanır.</p>
+</section>
+
+<section class="section alt">
+  <div class="wrap split">
+    <div class="split-copy">
+      <p class="eyebrow">Plan</p>
+      <h2 class="h2">Her gün saat saat hazır</h2>
+      <p class="sub">Uçuş, otel girişi, gezi ve akşam yemeği. Her etkinliği gününe yerleştir, kayıtlı yerlerle eşleştir; seyahat sırasında “Bugün” kartı sıradakini gösterir.</p>
+      <ul class="checks">
+        <li><svg class="ico" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Her gün ayrı sekmede, sürükleyerek sırala</li>
+        <li><svg class="ico" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Ziyaret edilen ve bekleyen yerler haritada ayrı renkte</li>
+        <li><svg class="ico" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Yolculuk öncesi ve günün planı için hatırlatma</li>
+      </ul>
     </div>
-    <div class="privacy-grid">
-      <div class="p-card"><div class="ico"><svg class="" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="20" x="5" y="2" rx="2"/><path d="M12 18h.01"/></svg></div><h3>Misafir modu</h3><p>Hesapsız kullanımda tüm seyahat verilerin yalnızca kendi cihazında durur.</p></div>
-      <div class="p-card"><div class="ico"><svg class="" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></svg></div><h3>AB’de barındırma</h3><p>Hesaplı kullanımda veriler Frankfurt (Almanya) bölgesindeki sunucularda, şifreli bağlantıyla saklanır.</p></div>
-      <div class="p-card"><div class="ico"><svg class="" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.73 5.08A10.43 10.43 0 0 1 12 5c7 0 10 7 10 7a13.16 13.16 0 0 1-1.67 2.68"/><path d="M6.61 6.61A13.53 13.53 0 0 0 2 12s3 7 10 7a9.74 9.74 0 0 0 5.39-1.61"/><path d="m2 2 20 20"/><path d="M9.88 9.88a3 3 0 1 0 4.24 4.24"/></svg></div><h3>Reklam ve takip yok</h3><p>Reklam, analiz aracı, reklam kimliği ya da konum takibi yok. Verilerini satmıyoruz.</p></div>
-      <div class="p-card"><div class="ico"><svg class="" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/></svg></div><h3>İstediğin an sil</h3><p>Seyahatlerini ya da hesabını tamamen silebilirsin. <a href="hesap-ve-veri-silme.html">Nasıl silinir?</a></p></div>
+    <div class="split-media duo">
+      <div class="phone"><img src="assets/img/ekran/gun-gun-plan.webp" alt="Gün gün plan ekranı: saatli etkinlikler" width="720" height="1413" loading="lazy" decoding="async"></div>
+      <div class="phone"><img src="assets/img/ekran/harita.webp" alt="Harita ekranı: kayıtlı yerler ve günün rotası" width="720" height="1413" loading="lazy" decoding="async"></div>
     </div>
-    <p style="text-align:center" class="muted">Ayrıntılar: <a href="gizlilik-politikasi.html">Gizlilik Politikası</a> · <a href="kvkk-aydinlatma-metni.html">KVKK Aydınlatma Metni</a> · <a href="kullanim-kosullari.html">Kullanım Koşulları</a></p>
   </div>
-</section><section id="sss" class="section"><div class="wrap pad-y stack-56"><div class="section-head" style="padding-top:0"><div class="eyebrow">SSS</div><h2 class="h2">Sık sorulan sorular</h2></div><div class="faq"><details><summary>Uygulama ücretli mi?</summary><p>Hayır. Travel Planner şu anda ücretsizdir; uygulamada reklam ya da uygulama içi satın alma yoktur.</p></details><details><summary>Neden Google Play’de değil?</summary><p>Uygulama henüz mağazalarda yayınlanmadı. Bu dönemde Android sürümünü yalnızca bu siteden APK dosyası olarak indirebilirsin. Mağaza sürümü yayınlandığında bu sayfada duyurulacak.</p></details><details><summary>iPhone için ne zaman gelecek?</summary><p>iOS sürümü gelecekte planlanıyor, henüz kesin bir tarih yok. Hazır olduğunda App Store bağlantısı bu sayfaya eklenecek.</p></details><details><summary>APK dosyası güvenli mi?</summary><p>APK’yı yalnızca bu sitedeki resmi bağlantıdan indir. Başka sitelerde, gruplarda veya mesajlaşma uygulamalarında paylaşılan kopyalar değiştirilmiş olabilir ve bunlardan sorumluluk kabul edilmez.</p></details><details><summary>Hesap açmak zorunda mıyım?</summary><p>Hayır. Misafir olarak kullanabilirsin; bu durumda veriler yalnızca cihazında kalır. Hesap yalnızca cihazlar arası eşitleme ve seyahat paylaşımı için gerekir.</p></details><details><summary>İnternet olmadan çalışır mı?</summary><p>Evet. Plan, harcamalar, görevler ve eklediğin belgeler internetsiz açılır. Hava durumu, harita, yer arama ve döviz kuru gibi özellikler internet ister; hesaplı kullanımda yaptığın değişiklikler bağlantı gelince eşitlenir.</p></details><details><summary>Uygulamayı nasıl güncellerim?</summary><p>APK sürümü kendiliğinden güncellenmez. Yeni sürüm çıktığında bu siteden indirip mevcut uygulamanın üzerine kurman yeterli; verilerin korunur. Yine de güncellemeden önce Profil → Veriler bölümünden yedek almanı öneririz.</p></details><details><summary>Hesabımı ve verilerimi nasıl silerim?</summary><p>Seyahatleri uygulama içinden tek tek silebilirsin. Hesabının tamamen silinmesi için <a href="hesap-ve-veri-silme.html">Hesap ve veri silme</a> sayfasındaki adımları izle.</p></details></div></div></section><section id="indir" class="download">
+</section>
+
+<section class="section">
+  <div class="wrap split reverse">
+    <div class="split-copy">
+      <p class="eyebrow">Bütçe</p>
+      <h2 class="h2">Paran nereye gidiyor, bir bakışta gör</h2>
+      <p class="sub">Seyahat bütçeni belirle, harcamalarını gir. Ne kadar harcadığını, ne kadar kaldığını ve arkadaşlarınla hesabın nasıl kapanacağını uygulama hesaplasın.</p>
+      <ul class="checks">
+        <li><svg class="ico" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Konaklama, ulaşım, yemek gibi kategori dağılımı</li>
+        <li><svg class="ico" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Avrupa Merkez Bankası kurlarıyla otomatik çeviri</li>
+        <li><svg class="ico" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Bütçenin %80’i ve %100’ünde bildirim, CSV dışa aktarma</li>
+      </ul>
+    </div>
+    <div class="split-media duo">
+      <div class="phone"><img src="assets/img/ekran/harcama-analizi.webp" alt="Harcama analizi ekranı: kategori dağılımı" width="720" height="1413" loading="lazy" decoding="async"></div>
+      <div class="phone"><img src="assets/img/ekran/bolusme.webp" alt="Harcama bölüşme ekranı: kim kime ne kadar borçlu" width="720" height="1413" loading="lazy" decoding="async"></div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="wrap split">
+    <div class="split-copy">
+      <p class="eyebrow">Yapay zekâ ve Keşfet</p>
+      <h2 class="h2">Boş sayfayla başlama</h2>
+      <p class="sub">İlgi alanını, temponu ve bütçeni seç; yapay zekâ gün gün bir rota önersin. Önerilen yerler haritada doğrulanır, istediklerini seçip planına eklersin. Ya da Keşfet’teki hazır planlardan birini kendi seyahatine dönüştür.</p>
+      <ul class="checks">
+        <li><svg class="ico" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Plan arka planda hazırlanır, hazır olunca bildirim gelir</li>
+        <li><svg class="ico" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Adın, e-postan, harcamaların ve belgelerin gönderilmez</li>
+        <li><svg class="ico" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Önceki planlar telefonunda kalır, tekrar açmak ücretsiz</li>
+      </ul>
+      <p class="note-sm">Yapay zekâ önerileri hatalı olabilir. Ayrıntılar: <a href="yapay-zeka-feragatnamesi.html">Yapay Zekâ Feragatnamesi</a>.</p>
+    </div>
+    <div class="split-media duo">
+      <div class="phone"><img src="assets/img/ekran/yapay-zeka.webp" alt="Yapay zekâ ile planla ekranı: ilgi alanı, tempo ve bütçe soruları" width="720" height="1413" loading="lazy" decoding="async"></div>
+      <div class="phone"><img src="assets/img/ekran/kesfet.webp" alt="Keşfet ekranı: hazır seyahat planları" width="720" height="1413" loading="lazy" decoding="async"></div>
+    </div>
+  </div>
+</section>
+
+<section id="ekranlar" class="section">
   <div class="wrap">
-    <h2 class="h2">Sıradaki seyahatini planlamaya başla</h2>
-    <p class="lead">Android sürümünü hemen indir, ilk seyahatini birkaç dakikada oluştur. iPhone sürümü yolda.</p>
-    <div class="store-row">
-      <a class="btn btn-light store-btn" href="https://github.com/akkusemrullah/akkusemrullah.github.io/releases/latest/download/TravelPlanner.apk" download><svg class="" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 10v6a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-6Z"/><path d="M7 10a5 5 0 0 1 10 0"/><path d="M9 7 7.5 4.5M15 7l1.5-2.5"/><path d="M4.5 10.5v4M19.5 10.5v4M10 17v3M14 17v3"/><circle cx="10" cy="8.5" r=".5"/><circle cx="14" cy="8.5" r=".5"/></svg><span><small>Android için doğrudan indir</small><strong>APK indir</strong></span></a>
-      <a class="btn btn-outline store-btn soon" href="#indir" aria-disabled="true" title="iOS sürümü henüz yayınlanmadı"><svg class="" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20.94c1.5 0 2.75 1.06 4 1.06 3 0 6-8 6-12.22A4.91 4.91 0 0 0 17 5c-2.22 0-4 1.44-5 2-1-.56-2.78-2-5-2a4.9 4.9 0 0 0-5 4.78C2 14 5 22 8 22c1.25 0 2.5-1.06 4-1.06Z"/><path d="M10 2c1 .5 2 2 2 5"/></svg><span><small>iPhone ve iPad <span class="pill">YAKINDA</span></small><strong>App Store</strong></span></a>
+    <div class="section-head">
+      <p class="eyebrow">Ekranlar</p>
+      <h2 class="h2">Uygulamayı yakından tanı</h2>
+      <p class="sub">Sade, okunaklı ekranlar. Açık ve koyu temada aynı netlik.</p>
     </div>
-    <ul class="meta-row">
-      <li>Sürüm 1.0.0 (önizleme)</li>
-      <li>Android 5.0 ve üzeri</li>
-      <li>Ücretsiz · Reklamsız</li>
+  </div>
+  <div class="gallery" data-gallery>
+    <div class="wrap gallery-controls">
+      <button class="icon-btn" type="button" data-dir="-1" aria-label="Önceki ekranlar"><svg class="ico" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></button>
+      <button class="icon-btn" type="button" data-dir="1" aria-label="Sonraki ekranlar"><svg class="ico" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></button>
+    </div>
+    <ul class="gallery-track" tabindex="0" aria-label="Uygulama ekranları">
+      <li><figure><div class="phone"><img src="assets/img/ekran/seyahatler.webp" alt="Seyahatler listesi" width="720" height="1413" loading="lazy" decoding="async"></div><figcaption>Seyahatler</figcaption></figure></li>
+      <li><figure><div class="phone"><img src="assets/img/ekran/seyahat-detay.webp" alt="Seyahat detayı" width="720" height="1413" loading="lazy" decoding="async"></div><figcaption>Seyahat detayı</figcaption></figure></li>
+      <li><figure><div class="phone"><img src="assets/img/ekran/hava-durumu.webp" alt="Hava durumu" width="720" height="1413" loading="lazy" decoding="async"></div><figcaption>Hava durumu</figcaption></figure></li>
+      <li><figure><div class="phone"><img src="assets/img/ekran/gorevler.webp" alt="Görevler ve bavul listesi" width="720" height="1413" loading="lazy" decoding="async"></div><figcaption>Görevler ve bavul</figcaption></figure></li>
+      <li><figure><div class="phone"><img src="assets/img/ekran/harcamalar.webp" alt="Harcamalar listesi" width="720" height="1413" loading="lazy" decoding="async"></div><figcaption>Harcamalar</figcaption></figure></li>
+      <li><figure><div class="phone"><img src="assets/img/ekran/harcama-analizi.webp" alt="Harcama analizi" width="720" height="1413" loading="lazy" decoding="async"></div><figcaption>Harcama analizi</figcaption></figure></li>
+      <li><figure><div class="phone"><img src="assets/img/ekran/karanlik-ana-sayfa.webp" alt="Koyu temada ana sayfa" width="720" height="1413" loading="lazy" decoding="async"></div><figcaption>Koyu tema</figcaption></figure></li>
+      <li><figure><div class="phone"><img src="assets/img/ekran/karanlik-plan.webp" alt="Koyu temada gün gün plan" width="720" height="1413" loading="lazy" decoding="async"></div><figcaption>Koyu temada plan</figcaption></figure></li>
     </ul>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Nasıl çalışır?</p>
+      <h2 class="h2">Üç adımda yola hazır</h2>
+    </div>
+    <ol class="steps">
+      <li><span class="num">1</span><h3>Seyahatini oluştur</h3><p>Şehri, tarihleri ve bütçeyi gir. İstersen kapak fotoğrafı ekle.</p></li>
+      <li><span class="num">2</span><h3>Planını kur</h3><p>Günleri kendin doldur, yapay zekâya hazırlat ya da Keşfet’ten hazır plan ekle.</p></li>
+      <li><span class="num">3</span><h3>Birlikte yola çık</h3><p>Arkadaşlarını davet et, harcamaları birlikte gir, hesabı uygulama kapatsın.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section id="gizlilik" class="section">
+  <div class="wrap">
+    <div class="privacy">
+      <div class="privacy-head">
+        <p class="eyebrow on-dark">Gizlilik</p>
+        <h2 class="h2">Verilerin senin, kontrol sende</h2>
+        <p>Hesap açmadan kullanabilirsin. Hesap açarsan verilerin yalnızca eşitleme ve paylaşım için Avrupa Birliği’ndeki sunucularda saklanır.</p>
+        <div class="btn-row">
+          <a class="btn btn-light btn-sm" href="gizlilik-politikasi.html">Gizlilik Politikası</a>
+          <a class="btn btn-outline-light btn-sm" href="yasal.html">Tüm yasal belgeler</a>
+        </div>
+      </div>
+      <ul class="privacy-list">
+        <li><svg class="ico" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg><div><strong>Misafir modu</strong><span>Hesapsız kullanımda tüm verilerin yalnızca kendi cihazında durur.</span></div></li>
+        <li><svg class="ico" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg><div><strong>Şifreli ve korumalı</strong><span>Tüm bağlantılar şifreli; bir seyahati yalnızca üyeleri görebilir.</span></div></li>
+        <li><svg class="ico" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m4.9 4.9 14.2 14.2"/></svg><div><strong>Reklam ve takip yok</strong><span>Reklam, analiz aracı, reklam kimliği ya da konum takibi yok. Verilerini satmayız.</span></div></li>
+        <li><svg class="ico" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/></svg><div><strong>İstediğin an sil</strong><span>Seyahatlerini ya da hesabını uygulamadan silebilirsin. <a href="hesap-ve-veri-silme.html">Nasıl silinir?</a></span></div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="sss" class="section alt">
+  <div class="wrap faq-grid">
+    <div class="section-head left">
+      <p class="eyebrow">SSS</p>
+      <h2 class="h2">Sık sorulan sorular</h2>
+      <p class="sub">Aradığını bulamadın mı? <a href="mailto:emrullahakkus@gmail.com">emrullahakkus@gmail.com</a> adresine yaz; genellikle birkaç iş günü içinde dönüyoruz.</p>
+    </div>
+    <div class="faq">
+      <details><summary>Uygulama ücretli mi?<svg class="ico" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></summary><p>Hayır. Travel Planner ücretsizdir; uygulamada reklam, abonelik ya da uygulama içi satın alma yoktur.</p></details>
+      <details><summary>Hesap açmak zorunda mıyım?<svg class="ico" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></summary><p>Hayır. Misafir olarak kullanabilirsin; bu durumda veriler yalnızca cihazında kalır. Hesap; cihazlar arası eşitleme, seyahat paylaşımı ve yapay zekâ ile planlama için gerekir.</p></details>
+      <details><summary>İnternet olmadan çalışır mı?<svg class="ico" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></summary><p>Evet. Plan, harcamalar, görevler ve eklediğin belgeler internetsiz açılır. Hava durumu, harita, yer arama, döviz kuru ve yapay zekâ internet ister; hesaplı kullanımda yaptığın değişiklikler bağlantı gelince eşitlenir.</p></details>
+      <details><summary>Yapay zekâ ile kaç plan oluşturabilirim?<svg class="ico" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></summary><p>Plan hakkın sınırlıdır; kaç hakkın kaldığını ve ne zaman yenileneceğini plan ekranında görürsün. Bir plan oluşturulamazsa hakkın geri verilir. Hazır planlar telefonunda kalır ve tekrar açmak ücretsizdir.</p></details>
+      <details><summary>Neden Google Play’de değil?<svg class="ico" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></summary><p>Uygulama henüz mağazalarda yayınlanmadı. Bu dönemde Android sürümünü yalnızca bu siteden APK dosyası olarak indirebilirsin. Mağaza sürümü yayınlandığında bu sayfada duyurulacak.</p></details>
+      <details><summary>iPhone için ne zaman gelecek?<svg class="ico" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></summary><p>iOS sürümü planlanıyor, henüz kesin bir tarih yok. Hazır olduğunda App Store bağlantısı bu sayfaya eklenecek.</p></details>
+      <details><summary>APK dosyası güvenli mi?<svg class="ico" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></summary><p>APK’yı yalnızca bu sitedeki resmi bağlantıdan indir. Başka sitelerde, gruplarda veya mesajlaşma uygulamalarında paylaşılan kopyalar değiştirilmiş olabilir.</p></details>
+      <details><summary>Uygulamayı nasıl güncellerim?<svg class="ico" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></summary><p>APK sürümü kendiliğinden güncellenmez. Yeni sürüm çıktığında bu siteden indirip mevcut uygulamanın üzerine kurman yeterli; verilerin korunur. Güncellemeden önce Profil → Yedekleme → Yedek al ile yedek almanı öneririz.</p></details>
+      <details><summary>Hesabımı ve verilerimi nasıl silerim?<svg class="ico" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></summary><p>Uygulamada Profil → Hesabımı sil ile hesabını ve bulut verilerini silebilirsin. Uygulamaya erişemiyorsan <a href="hesap-ve-veri-silme.html">Hesap ve veri silme</a> sayfasındaki e-posta yöntemini kullan.</p></details>
+    </div>
+  </div>
+</section>
+
+<section id="indir" class="download">
+  <div class="wrap download-grid">
+    <div>
+      <h2 class="h2">Sıradaki seyahatini planlamaya başla</h2>
+      <p class="lead">Android sürümünü hemen indir, ilk seyahatini birkaç dakikada oluştur. iPhone sürümü yolda.</p>
+      <div class="store-row">
+        <a class="btn btn-light store-btn" href="https://github.com/akkusemrullah/akkusemrullah.github.io/releases/latest/download/TravelPlanner.apk" download><svg class="ico" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 10v6a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-6Z"/><path d="M7 10a5 5 0 0 1 10 0"/><path d="M9 7 7.5 4.5M15 7l1.5-2.5"/><path d="M4.5 10.5v4M19.5 10.5v4M10 17v3M14 17v3"/><circle cx="10" cy="8.5" r=".5"/><circle cx="14" cy="8.5" r=".5"/></svg><span><small>Android için doğrudan indir</small><strong>APK indir</strong></span></a>
+        <a class="btn btn-outline-light store-btn soon" href="#indir" aria-disabled="true" title="iOS sürümü henüz yayınlanmadı"><svg class="ico" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20.94c1.5 0 2.75 1.06 4 1.06 3 0 6-8 6-12.22A4.91 4.91 0 0 0 17 5c-2.22 0-4 1.44-5 2-1-.56-2.78-2-5-2a4.9 4.9 0 0 0-5 4.78C2 14 5 22 8 22c1.25 0 2.5-1.06 4-1.06Z"/><path d="M10 2c1 .5 2 2 2 5"/></svg><span><small>iPhone ve iPad · Yakında</small><strong>App Store</strong></span></a>
+      </div>
+      <ul class="meta-row">
+        <li>Sürüm 1.0.0 (önizleme)</li>
+        <li>Android 7.0 ve üzeri</li>
+        <li>Ücretsiz · Reklamsız</li>
+      </ul>
+    </div>
     <div class="apk-steps">
       <h3>APK nasıl kurulur?</h3>
       <ol>
-        <li>Yukarıdaki <strong>APK indir</strong> düğmesine dokun ve dosyanın inmesini bekle.</li>
-        <li>İndirilen <strong>TravelPlanner.apk</strong> dosyasını bildirimden ya da Dosyalar uygulamasından aç.</li>
-        <li>Telefon izin isterse, dosyayı açtığın uygulama (ör. Chrome veya Dosyalar) için <strong>“Bu kaynaktan yüklemeye izin ver”</strong> seçeneğini aç.</li>
-        <li><strong>Yükle</strong>’ye dokun. Kurulum bitince bu izni yeniden kapatabilirsin.</li>
-        <li>Google Play Protect bir uyarı gösterirse, uygulamanın henüz mağazada olmamasından kaynaklanır; dosyayı bu siteden indirdiysen <strong>“Yine de yükle”</strong> ile devam edebilirsin.</li>
+        <li><strong>APK indir</strong> düğmesine dokun ve dosyanın inmesini bekle.</li>
+        <li>İnen <strong>TravelPlanner.apk</strong> dosyasını bildirimden ya da Dosyalar uygulamasından aç.</li>
+        <li>Telefon izin isterse dosyayı açtığın uygulama için <strong>“Bu kaynaktan yüklemeye izin ver”</strong> seçeneğini aç.</li>
+        <li><strong>Yükle</strong>’ye dokun. Kurulumdan sonra bu izni yeniden kapatabilirsin.</li>
+        <li>Google Play Protect uyarı gösterirse bu, uygulamanın henüz mağazada olmamasındandır; dosyayı bu siteden indirdiysen <strong>“Yine de yükle”</strong> ile devam edebilirsin.</li>
       </ol>
-      <p class="note">Bu bir önizleme sürümüdür; hatalar içerebilir. Önemli bilgilerin için düzenli yedek al. Uygulamayı indirip kullanarak <a href="kullanim-kosullari.html">Kullanım Koşulları</a>’nı kabul etmiş olursun; kişisel verilerinin nasıl işlendiğini <a href="gizlilik-politikasi.html">Gizlilik Politikası</a> ve <a href="kvkk-aydinlatma-metni.html">KVKK Aydınlatma Metni</a>’nde bulabilirsin. APK’yı yalnızca bu siteden indir.</p>
+      <p class="note">Bu bir önizleme sürümüdür; hatalar içerebilir. Uygulamayı kullanarak <a href="kullanim-kosullari.html">Kullanım Koşulları</a>’nı kabul etmiş olursun; verilerinin nasıl işlendiği <a href="gizlilik-politikasi.html">Gizlilik Politikası</a> ve <a href="kvkk-aydinlatma-metni.html">KVKK Aydınlatma Metni</a>’nde anlatılır.</p>
     </div>
   </div>
 </section>
@@ -168,42 +259,33 @@
   <div class="wrap">
     <div class="foot-grid">
       <div class="foot-brand">
-        <a class="brand" href="index.html" aria-label="Travel Planner ana sayfa"><svg aria-hidden="true" viewBox="0 0 120 120"><path d="M60 112C60 112 22 72 22 46a38 38 0 0 1 76 0c0 26-38 66-38 66Z" fill="#FFFFFF"/><path d="M37 47 81 28 65 69 57 55Z" fill="var(--hero)"/><path d="M57 55 81 28" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" fill="none"/></svg><span><b>Travel</b><span>Planner</span></span></a>
-        <p>Seyahat planı, bütçe, belgeler ve harita tek uygulamada. Reklam yok, takip yok.</p>
+        <a class="brand" href="index.html" aria-label="Travel Planner ana sayfa"><svg class="logo" aria-hidden="true" viewBox="0 0 40 40"><rect width="40" height="40" rx="10" fill="#1E3A8A"/><g transform="translate(20 21) scale(.27) translate(-60 -67)"><path d="M60 112C60 112 22 72 22 46a38 38 0 0 1 76 0c0 26-38 66-38 66Z" fill="#fff"/><path d="M37 47 81 28 65 69 57 55Z" fill="#1E3A8A"/><path d="M57 55 81 28" stroke="#fff" stroke-width="4" stroke-linecap="round" fill="none"/></g></svg><span>Travel Planner</span></a>
+        <p>Seyahatini tek yerden planla: gün gün plan, harita, bütçe, harcama bölüşme ve belgeler tek uygulamada. Reklam yok, takip yok.</p>
+        <p class="foot-pub">Bir <strong>EAKSOFT</strong> uygulamasıdır.</p>
       </div>
       <div>
         <h2>Uygulama</h2>
         <ul>
           <li><a href="index.html#ozellikler">Özellikler</a></li>
+          <li><a href="index.html#ekranlar">Ekranlar</a></li>
           <li><a href="index.html#indir">Android APK indir</a></li>
           <li><a href="index.html#sss">Sık sorulan sorular</a></li>
-          <li><a href="acik-kaynak-lisanslari.html">Lisanslar ve atıflar</a></li>
         </ul>
       </div>
       <div>
         <h2>Yasal</h2>
-        <ul>
-          <li><a href="gizlilik-politikasi.html">Gizlilik Politikası</a></li>
-          <li><a href="kvkk-aydinlatma-metni.html">KVKK Aydınlatma Metni</a></li>
-          <li><a href="kullanim-kosullari.html">Kullanım Koşulları</a></li>
-          <li><a href="cerez-politikasi.html">Çerez Politikası</a></li>
-          <li><a href="acik-riza-metni.html">Açık Rıza Metni</a></li>
-          <li><a href="yapay-zeka-feragatnamesi.html">Yapay Zekâ Feragatnamesi</a></li>
-          <li><a href="iade-politikasi.html">İptal ve İade Politikası</a></li>
-          <li><a href="privacy-policy.html" hreflang="en" lang="en">Privacy Policy (English)</a></li>
-        </ul>
+        <ul><li><a href="gizlilik-politikasi.html">Gizlilik Politikası</a></li><li><a href="kvkk-aydinlatma-metni.html">KVKK Aydınlatma Metni</a></li><li><a href="acik-riza-metni.html">Açık Rıza Metni</a></li><li><a href="cerez-politikasi.html">Çerez Politikası</a></li><li><a href="kullanim-kosullari.html">Kullanım Koşulları</a></li><li><a href="yapay-zeka-feragatnamesi.html">Yapay Zekâ Feragatnamesi</a></li><li><a href="iade-politikasi.html">İptal ve İade Politikası</a></li><li><a href="acik-kaynak-lisanslari.html">Lisanslar ve atıflar</a></li><li><a href="privacy-policy.html" hreflang="en" lang="en">Privacy Policy (English)</a></li></ul>
       </div>
       <div>
-        <h2>Haklarınız</h2>
-        <ul>
-          <li><a href="hesap-ve-veri-silme.html">Hesap ve veri silme</a></li>
-          <li><a href="kvkk-basvuru.html">KVKK başvuru formu</a></li>
-          <li><a href="mailto:emrullahakkus@gmail.com">İletişim: emrullahakkus@gmail.com</a></li>
+        <h2>Haklarınız ve destek</h2>
+        <ul><li><a href="hesap-ve-veri-silme.html">Hesap ve veri silme</a></li><li><a href="kvkk-basvuru.html">KVKK başvuru formu</a></li>
+          <li><a href="yasal.html">Tüm yasal belgeler</a></li>
+          <li><a href="mailto:emrullahakkus@gmail.com">emrullahakkus@gmail.com</a></li>
         </ul>
       </div>
     </div>
     <div class="foot-bottom">
-      <span>© <span data-year>2026</span> Emrullah Akkuş · Travel Planner. Tüm hakları saklıdır.</span>
+      <span>© <span data-year>2026</span> EAKSOFT · Emrullah AKKUŞ. Tüm hakları saklıdır.</span>
       <span>Harita verisi © <a href="https://www.openstreetmap.org/copyright" rel="noopener">OpenStreetMap katkıcıları</a> · OpenMapTiles · OpenFreeMap · Hava verisi <a href="https://open-meteo.com/" rel="noopener">Open-Meteo.com</a> (CC BY 4.0)</span>
     </div>
   </div>
